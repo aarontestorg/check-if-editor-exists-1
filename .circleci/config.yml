@@ -1,0 +1,13 @@
+version: 2.1
+
+jobs:
+  job1:
+    docker:
+      - image: "circleci/python:3.6-node-browsers-legacy"
+    steps:
+      - checkout
+
+workflows:
+  workflow1:
+    jobs:
+      - job1
